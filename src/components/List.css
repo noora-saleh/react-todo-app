@@ -107,3 +107,67 @@
   height: 18px;
   cursor: pointer;
 }
+/* ==========================================
+   تنسيقات الثيم المظلم (تطبق فقط عند إضافة كلاس dark)
+   ========================================== */
+
+/* الكارت الأساسي في الوضع المظلم */
+.todo-container.dark {
+  background-color: #1e1e2e;
+  color: #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* العنوان والعناصر النصية */
+.todo-container.dark .todo-title {
+  color: #ffffff;
+}
+
+/* حقل الإدخال في الوضع المظلم */
+.todo-container.dark .todo-input {
+  background-color: #3e3e4e;
+  color: #ffffff;
+  border-color: #444466;
+}
+
+.todo-container.dark .todo-input::placeholder {
+  color: #aaa;
+}
+
+/* عناصر القائمة (كل مهمة) */
+.todo-container.dark .todo-item {
+  background-color: #3e3e4e;
+  border-color: #3f3f5a;
+}
+
+.todo-container.dark .task-text {
+  color: #ffffff;
+}
+
+.todo-container.dark .todo-item.completed .task-text {
+  color: #777799;
+}
+
+/* نص لا توجد مهام */
+.todo-container.dark .no-tasks {
+  color: #aaa;
+}
+
+
+/* زر تغيير الثيم */
+.theme-toggle-btn {
+  width: 150px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  background-color: #3b3b7a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #4f4f9e;
+}

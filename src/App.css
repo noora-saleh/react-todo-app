@@ -1,3 +1,35 @@
+/* إعدادات الشاشة الكاملة */
+.app-wrapper {
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* الوضع المضيء الشامل */
+.app-wrapper.light {
+  background-color: #f4f6f8;
+  color: #222222;
+}
+
+/* الوضع الداكن الشامل لكل الخلفية */
+.app-wrapper.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* زر الثيم المتناسق مع باقي الأزرار */
+.theme-btn {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-btn:hover {
+  background-color: #5b4bc4;
+}
 
 .main-app button {
    background-color: #252556;
