@@ -1,0 +1,74 @@
+/* الحاوية الرئيسية */
+.directory-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.directory-container h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* حقل البحث والتنسيق الخارجي */
+.directory-container input {
+  width: 100%;
+  max-width: 300px; /* تحديد العرض ليكون أربك في منتصف الصفحة */
+  padding: 12px 18px;
+  margin-bottom: 40px; /* مسافة ممتازة ومريحة بين البحث والكروت */
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: right;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* شبكة عرض البطاقات (Grid) */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* البطاقة الفردية (User Card) */
+.user-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid #f1f5f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: right;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* عنوان الكارت (اسم المستخدم) */
+.user-card h3 {
+  margin: 0 0 14px 0;
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2px solid #f8fafc;
+  padding-bottom: 8px;
+}
+
+/* النصوص التفصيلية داخل الكارت */
+.user-card p {
+  margin: 8px 0;
+  text-align: right;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.user-card p strong {
+  color: #1e293b;
+  font-weight: 600;
+  margin-left: 4px;
+}

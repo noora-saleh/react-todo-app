@@ -9,6 +9,7 @@ import About from './components/About'
 import Footer from './components/Footer'
 import CartItem from './components/CartItem'
 import List from './components/List'
+import UsersDirectory from './components/UsersDirectory'
 
 function App() {
   const [activePage, setActivePage] = useState('todo');
@@ -21,12 +22,15 @@ function App() {
         <button onClick={() => setActivePage('about')}>  About</button>
         <button onClick={() => setActivePage('cart')}>  Cart</button>
         <button onClick={() => setActivePage('todo')}>  To-Do-List</button>
+        <button onClick={() => setActivePage('users')}>  Users</button>
+
       </nav>
 
       <main>
         {activePage === 'about' && <About />}
         {activePage === 'cart' && <CartItem name="Laptop" price={1000} />}
         {activePage === 'todo' && <List />}
+        {activePage === 'users' && <UsersDirectory />}
       </main>
     </div>
 
